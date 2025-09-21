@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARTIFY Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ARTIFY 🎨</h1>
+    <div class="login-box">
+      <input type="text" id="login-email" placeholder="Enter Your Email / Phone Number" />
+      <input type="password" id="login-password" placeholder="Password" />
+
+      <div class="forgot-link">
+      <a href="forgot.html">Forgot Password?</a>
+       </div>
+
+      <div class="button-group">
+        <button class="login-btn" id="login-button">Login</button>
+
+        <button class="signup-btn" onclick="window.location.href='signup.html'">Signup</button>
+      </div>
+    </div>
+  </div>
+  <!-- Firebase SDKs -->
+<!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+
+<!-- Firebase Authentication -->
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDdkxJ4ASTKBrvhJ6q_SUVVxCEzWxpKjEI",
+    authDomain: "artify-a2731.firebaseapp.com",
+    projectId: "artify-a2731",
+    storageBucket: "artify-a2731.appspot.com",
+    messagingSenderId: "887976192417",
+    appId: "1:887976192417:web:80d0fb514b2d69e58d83e0",
+    measurementId: "G-D2LD4TDZRN"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
